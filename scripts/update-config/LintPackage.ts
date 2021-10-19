@@ -51,3 +51,4 @@ export class LintPackage {
 function ignoreFile(file: ts.SourceFile, dirPath: string, program: ts.Program): boolean {
     return program.isSourceFileDefaultLibrary(file) || isExternalDependency(file, path.resolve(dirPath), program);
 }
+/* tslint:enable */
